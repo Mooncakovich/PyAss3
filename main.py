@@ -20,6 +20,8 @@ class User(object):
         self.loggined = False
     def SetUsername(self, username):
         self.user_login = username
+    def GetUsername(self):
+        return(self.user_login)
     def LoggedIn(self):
         return(self.loggined)
 
@@ -72,7 +74,7 @@ def login():
 @app.route("/main")
 def main():
     if user.LoggedIn():
-        return render_template('main.html')
+        return render_template('main.html', username = user.GetUsername())
     else:
        return redirect(url_for('login'), 301) 
 

@@ -8,10 +8,16 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <section class="nav">
+        <div class="dropdown"><span>{{username}}</span>
+            <div class="dropdown-content">
+                <button><a href="/login">Logout</a></button>
+            </div></div>
+    </section>
     <section class="form" >
         <form action="/result" method="post"><h1>Enter address</h1>
         <input type="text" name="adress"><br>
-        <button type="submit">Find</button></form>
+        <button type="submit" class="button">Find</button></form>
     </section>
 </body>
 </html>

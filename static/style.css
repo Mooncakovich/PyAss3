@@ -23,13 +23,13 @@ input{
 ::placeholder {
     color: #a14347;
 }
-button{
+.button{
     background-color: black;
     border: 1px solid black;
     padding: 5px 20px;
     margin: 10px;
 }
-button:hover{
+.button:hover{
     cursor: pointer;
     border: 1px solid #db3138;
     padding: 5px 20px;
@@ -44,3 +44,26 @@ h3{
     margin-top: 2%;
     margin-bottom: 1%;
 }
+.nav{
+    display: flex;
+    justify-content: end;
+    padding: 5 px15px;
+}
+.dropdown {
+    padding: 15px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 8px 10px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
