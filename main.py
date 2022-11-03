@@ -106,14 +106,14 @@ def result():
                 print('fromDB')
             cur.close()
             conn.close()
-            return render_template('result.html', adress = response.text)
+            return render_template('result.html', adress = response.text, username = user.GetUsername())
         else:
             cur.execute("""INSERT INTO data (adress, data) VALUES (%s, %s);""", (adress, response.text))
             conn.commit()
             cur.close()
             conn.close()
             print('added to db')
-            return render_template('result.html', adress = response.text)
+            return render_template('result.html', adress = response.text, username = user.GetUsername())
     else:
        return redirect(url_for('login'), 301) 
 

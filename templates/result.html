@@ -7,7 +7,12 @@
     <title>Result</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
+<body><section class="nav">
+    <div class="dropdown"><span>{{username}}</span>
+        <div class="dropdown-content">
+            <button><a href="/login">Logout</a></button>
+        </div></div>
+</section>
     {% if adress %}
     <h3>{{adress}}</h3>
     {% endif %}
