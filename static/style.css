@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #db3138;
+}
+.main{
+    border: 1px solid #db3138;
+    width: 20%;
+    margin: 15% auto;
+    padding: 1%;
+}
+.title{
+    text-align: center;
+}
+input{
+    padding: 5px;
+    width: 90%;
+    background-color: black;
+    border: 1px solid #db3138;
+    
+}
+::placeholder {
+    color: #a14347;
+}
+button{
+    background-color: black;
+    border: 1px solid black;
+    padding: 5px 20px;
+    margin: 10px;
+}
+button:hover{
+    cursor: pointer;
+    border: 1px solid #db3138;
+    padding: 5px 20px;
+    margin: 10px;
+}
+form{
+    text-align: center;
+}
+h3{
+    text-align: left;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
